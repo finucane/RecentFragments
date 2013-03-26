@@ -1,0 +1,8 @@
+Here are two chunks of code from a project that was part of a job in Santa Rosa that didn't pan out. My former boss said I could use this stuff as code samples for my resume.
+
+This is just meant to be read by a programmer, it won't compile into anything that you can see.
+
+AudioQueue is code that uses Audio Queue Services to record sound to a RAM buffer, which is pretty obscure but really just requires reading the Apple documentation.
+
+NetworkLayer shows how to use NSURLConnection and NSOperationQueue as a basis for a little network stack that gives you reliability and error reporting and progress indication. It was written to fit underneath code that would have synced a core data object graph to a web service in boring, hard to get wrong, block-driven code.
+
