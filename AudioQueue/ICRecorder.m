@@ -116,7 +116,7 @@ static OSStatus writeProc (void*inClientData,
         /*save the completion block and null out our opaque C pointer for dealloc*/
         block = aBlock;
         
-        /*we'll make this on start when the UI can deal w/ failure easily*/
+        /*we'll make this on start when the UI can deal with failure easily*/
         audioQueue = 0;
         
         status = 0;
@@ -125,7 +125,7 @@ static OSStatus writeProc (void*inClientData,
     return self;
 }
 
-/*seconds is a float to allow buffer sizes for less than a second. this size doesn't have to be accurate*/
+/*seconds is a float to allow buffer sizes for less than a second. This size doesn't have to be accurate*/
 -(unsigned)bufferSizeForSeconds:(double)seconds
 {
     insist (self && seconds);
@@ -275,7 +275,7 @@ static OSStatus writeProc (void*inClientData,
     if (![self reset])
         return NO;
     
-    /*this is used for asychnronously stopping the recording, it will be set by stop and looked
+    /*this is used for asynchronously stopping the recording, it will be set by stop and looked
      at by the callback routine as the last packet arrives*/
     
     AQ_CALL (AudioQueueStart (audioQueue, 0));
