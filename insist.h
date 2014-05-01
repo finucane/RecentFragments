@@ -3,6 +3,7 @@
 //  iConsult Enterprise
 //
 //  Created by finucane on 1/14/13.
+//  Donated to the public domain.
 //
 //
 
